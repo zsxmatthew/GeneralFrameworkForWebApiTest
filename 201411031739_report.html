@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>API general testing report: </title>
+    <meta name="generator" content="HTMLTestRunner 0.8.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: medium solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: thin solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+function html_escape(s) {
+    s = s.replace(/&(?![a-z]+;)/g,'&amp;');
+    s = s.replace(/<(?!\~)/g,'&lt;');
+    s = s.replace(/>(?!\~)/g,'&gt;');
+    s = s.replace(/<~/g,'<');
+    s = s.replace(/>~/g,'>');
+    return s;
+}
+
+function showOutput(id, name) {
+    var w = window.open("about:blank", //url
+                    "",
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+--></script>
+
+<div class='heading'>
+<h1>API general testing report: </h1>
+<p class='attribute'><strong>Start Time:</strong> 2014-11-03 17:39:12</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.643000</p>
+<p class='attribute'><strong>Status:</strong> Pass 1</p>
+
+<p class='description'>This is a report automatically created by Pytusk Automation testing tool.                             Click 'pass', 'fail', or 'error' below for details.</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='passClass'>
+    <td>TestSample.SampleTC</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_sample</div></td>
+    <td colspan='5' align='center'><a href="javascript:showOutput('pt1.1', 'test_sample')">pass</a>
+<script language="javascript" type="text/javascript">output_list['pt1.1'] = 'Running test case: TestSample.SampleTC.test_sample\nresponse: \'{\\n    \"status\":0,\\n    \"message\":\"ok\",\\n    \"results\":[\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe9\\xa6\\x99\\xe6\\xa0\\xbc\\xe9\\x87\\x8c\\xe6\\x8b\\x89\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.950217,\\n                \"lng\":116.31485\\n            },\\n            \"address\":\"\\xe6\\xb5\\xb7\\xe6\\xb7\\x80\\xe5\\x8c\\xba\\xe7\\xb4\\xab\\xe7\\xab\\xb9\\xe9\\x99\\xa2\\xe8\\xb7\\xaf29\\xe5\\x8f\\xb7\\xef\\xbc\\x88\\xe8\\xa5\\xbf\\xe4\\xb8\\x89\\xe7\\x8e\\xaf\\xe5\\x8c\\x97\\xe8\\xb7\\xaf\\xe4\\xb8\\x8e\\xe7\\xb4\\xab\\xe7\\xab\\xb9\\xe9\\x99\\xa2\\xe8\\xb7\\xaf\\xe4\\xba\\xa4\\xe5\\x8f\\x89\\xe5\\x8f\\xa3\\xe8\\xa5\\xbf\\xe5\\x8c\\x97\\xe8\\xa7\\x92\\xef\\xbc\\x89\",\\n            \"street_id\":\"6deee308fdfbcc7329fc4804\",\\n            \"telephone\":\"(010)68412211\",\\n            \"uid\":\"6deee308fdfbcc7329fc4804\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe4\\xb8\\x96\\xe7\\xba\\xaa\\xe9\\x87\\x91\\xe6\\xba\\x90\\xe5\\xa4\\xa7\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.959377,\\n                \"lng\":116.287224\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xb8\\x82\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\xb5\\xb7\\xe6\\xb7\\x80\\xe6\\x9d\\xbf\\xe4\\xba\\x95\\xe8\\xb7\\xaf69\\xe5\\x8f\\xb7\",\\n            \"street_id\":\"1816533449feda1dfa2d619e\",\\n            \"telephone\":\"010-88598888,13901257698\",\\n            \"uid\":\"1816533449feda1dfa2d619e\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\x9b\\xbd\\xe9\\x99\\x85\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.915763,\\n                \"lng\":116.434797\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xb8\\x82\\xe4\\xb8\\x9c\\xe5\\x9f\\x8e\\xe5\\x8c\\xba\\xe5\\xbb\\xba\\xe5\\x9b\\xbd\\xe9\\x97\\xa8\\xe5\\x86\\x85\\xe5\\xa4\\xa7\\xe8\\xa1\\x979\\xe5\\x8f\\xb7\",\\n            \"street_id\":\"55fa2c0b7206ea341ce99935\",\\n            \"telephone\":\"010-65126688\",\\n            \"uid\":\"55fa2c0b7206ea341ce99935\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\x98\\x86\\xe4\\xbb\\x91\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.954082,\\n                \"lng\":116.466529\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xb8\\x82\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe6\\x96\\xb0\\xe6\\xba\\x90\\xe5\\x8d\\x97\\xe8\\xb7\\xaf2\\xe5\\x8f\\xb7(\\xe4\\xb8\\x9c\\xe4\\xb8\\x89\\xe7\\x8e\\xaf\\xe5\\x8c\\x97\\xe8\\xb7\\xaf\\xe4\\xb8\\x8e\\xe6\\x96\\xb0\\xe6\\xba\\x90\\xe5\\x8d\\x97\\xe8\\xb7\\xaf\\xe4\\xba\\xa4\\xe6\\xb1\\x87\\xe5\\xa4\\x84\\xe8\\xa5\\xbf\\xe5\\x8d\\x97\\xe8\\xa7\\x92)\",\\n            \"street_id\":\"669775d035aa1b42fd0eb008\",\\n            \"telephone\":\"010-65903388\",\\n            \"uid\":\"669775d035aa1b42fd0eb008\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe4\\xb8\\xad\\xe5\\x9b\\xbd\\xe5\\xa4\\xa7\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.91561,\\n                \"lng\":116.465846\\n            },\\n            \"address\":\"\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe5\\xbb\\xba\\xe5\\x9b\\xbd\\xe9\\x97\\xa8\\xe5\\xa4\\x96\\xe5\\xa4\\xa7\\xe8\\xa1\\x97\\xe4\\xb8\\x80\\xe5\\x8f\\xb7(\\xe5\\x9b\\xbd\\xe8\\xb4\\xb8\\xe4\\xb8\\xad\\xe5\\xbf\\x83)\",\\n            \"street_id\":\"4ea3f2f1b0472bb3aecb663f\",\\n            \"telephone\":\"(010)65052266\",\\n            \"uid\":\"4ea3f2f1b0472bb3aecb663f\"\\n        },\\n        {\\n            \"name\":\"\\xe8\\xa5\\xbf\\xe8\\x8b\\x91\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.942936,\\n                \"lng\":116.33884\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xb8\\x82\\xe6\\xb5\\xb7\\xe6\\xb7\\x80\\xe5\\x8c\\xba\\xe4\\xb8\\x89\\xe9\\x87\\x8c\\xe6\\xb2\\xb3\\xe8\\xb7\\xaf1\\xe5\\x8f\\xb7(\\xe8\\xbf\\x91\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe9\\xa6\\x96\\xe9\\x83\\xbd\\xe4\\xbd\\x93\\xe8\\x82\\xb2\\xe9\\xa6\\x86\\xe5\\x92\\x8c\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\x8a\\xa8\\xe7\\x89\\xa9\\xe5\\x9b\\xad)\",\\n            \"street_id\":\"eb3675036510d10201ec0197\",\\n            \"telephone\":\"010-68313388,010-68314577\",\\n            \"uid\":\"eb3675036510d10201ec0197\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\xb8\\x94\\xe9\\x98\\xb3\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.951987,\\n                \"lng\":116.454826\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe6\\x96\\xb0\\xe6\\xba\\x90\\xe8\\xa5\\xbf\\xe9\\x87\\x8c\\xe4\\xb8\\xad\\xe8\\xa1\\x9718\\xe5\\x8f\\xb7\\xef\\xbc\\x88\\xe6\\x96\\xb0\\xe6\\xba\\x90\\xe8\\xa5\\xbf\\xe9\\x87\\x8c\\xe4\\xb8\\xad\\xe8\\xa1\\x97\\xe4\\xb8\\x8e\\xe5\\x8c\\x97\\xe4\\xba\\x8c\\xe9\\x87\\x8c\\xe5\\xba\\x84\\xe8\\xb7\\xaf\\xe4\\xba\\xa4\\xe6\\xb1\\x87\\xe5\\xa4\\x84\\xef\\xbc\\x89\",\\n            \"street_id\":\"c879fa01948d5253c909f002\",\\n            \"telephone\":\"(010)64669988\",\\n            \"uid\":\"c879fa01948d5253c909f002\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe4\\xb8\\x87\\xe8\\xbe\\xbe\\xe7\\xb4\\xa2\\xe8\\x8f\\xb2\\xe7\\x89\\xb9\\xe5\\xa4\\xa7\\xe9\\xa5\\xad\\xe5\\xba\\x97(\\xe4\\xb8\\x87\\xe8\\xbe\\xbe\\xe5\\xba\\x97)\",\\n            \"location\":{\\n                \"lat\":39.914884,\\n                \"lng\":116.476814\\n            },\\n            \"address\":\"\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe5\\xbb\\xba\\xe5\\x9b\\xbd\\xe8\\xb7\\xaf93\\xe5\\x8f\\xb7\\xe4\\xb8\\x87\\xe8\\xbe\\xbe\\xe7\\xb4\\xa2\\xe8\\x8f\\xb2\\xe7\\x89\\xb9\\xe5\\xa4\\xa7\\xe9\\x85\\x92\\xe5\\xba\\x9726\\xe6\\xa5\\xbc\",\\n            \"street_id\":\"4ea3f2f1b04d2bb3aecb6601\",\\n            \"telephone\":\"(010)85996666\",\\n            \"uid\":\"4ea3f2f1b04d2bb3aecb6601\"\\n        },\\n        {\\n            \"name\":\"VIVA\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xaf\\x8c\\xe5\\x8a\\x9b\\xe5\\xb9\\xbf\\xe5\\x9c\\xba\",\\n            \"location\":{\\n                \"lat\":39.900916,\\n                \"lng\":116.467571\\n            },\\n            \"address\":\"\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe5\\x8f\\x8c\\xe4\\xba\\x95\\xe6\\xa1\\xa5\\xe8\\xa5\\xbf\\xe5\\x8c\\x97\\xe4\\xbe\\xa7\\xef\\xbc\\x88\\xe5\\x9b\\xbd\\xe8\\xb4\\xb8\\xe6\\xa1\\xa5\\xe5\\x90\\x91\\xe5\\x8d\\x97\\xe7\\xba\\xa6700\\xe7\\xb1\\xb3\\xef\\xbc\\x89\",\\n            \"street_id\":\"680fb7037c2577858ab988ae\",\\n            \"telephone\":\"010-59037478\",\\n            \"uid\":\"680fb7037c2577858ab988ae\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\x96\\xb0\\xe5\\x8c\\x97\\xe7\\xba\\xac\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.89044,\\n                \"lng\":116.395972\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe8\\xa5\\xbf\\xe5\\x9f\\x8e\\xe5\\x8c\\xba(\\xe5\\x8e\\x9f\\xe5\\xae\\xa3\\xe6\\xad\\xa6\\xe5\\x8c\\xba)\\xe8\\xa5\\xbf\\xe7\\xbb\\x8f\\xe8\\xb7\\xaf11\\xe5\\x8f\\xb7\",\\n            \"street_id\":\"d305db1f93170c27932ca335\",\\n            \"telephone\":\"(010)63012266\",\\n            \"uid\":\"d305db1f93170c27932ca335\"\\n        }\\n    ]\\n}\'\nresponse: \'{\\n    \"status\":0,\\n    \"message\":\"ok\",\\n    \"results\":[\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe9\\xa6\\x99\\xe6\\xa0\\xbc\\xe9\\x87\\x8c\\xe6\\x8b\\x89\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.950217,\\n                \"lng\":116.31485\\n            },\\n            \"address\":\"\\xe6\\xb5\\xb7\\xe6\\xb7\\x80\\xe5\\x8c\\xba\\xe7\\xb4\\xab\\xe7\\xab\\xb9\\xe9\\x99\\xa2\\xe8\\xb7\\xaf29\\xe5\\x8f\\xb7\\xef\\xbc\\x88\\xe8\\xa5\\xbf\\xe4\\xb8\\x89\\xe7\\x8e\\xaf\\xe5\\x8c\\x97\\xe8\\xb7\\xaf\\xe4\\xb8\\x8e\\xe7\\xb4\\xab\\xe7\\xab\\xb9\\xe9\\x99\\xa2\\xe8\\xb7\\xaf\\xe4\\xba\\xa4\\xe5\\x8f\\x89\\xe5\\x8f\\xa3\\xe8\\xa5\\xbf\\xe5\\x8c\\x97\\xe8\\xa7\\x92\\xef\\xbc\\x89\",\\n            \"street_id\":\"6deee308fdfbcc7329fc4804\",\\n            \"telephone\":\"(010)68412211\",\\n            \"uid\":\"6deee308fdfbcc7329fc4804\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe4\\xb8\\x96\\xe7\\xba\\xaa\\xe9\\x87\\x91\\xe6\\xba\\x90\\xe5\\xa4\\xa7\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.959377,\\n                \"lng\":116.287224\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xb8\\x82\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\xb5\\xb7\\xe6\\xb7\\x80\\xe6\\x9d\\xbf\\xe4\\xba\\x95\\xe8\\xb7\\xaf69\\xe5\\x8f\\xb7\",\\n            \"street_id\":\"1816533449feda1dfa2d619e\",\\n            \"telephone\":\"010-88598888,13901257698\",\\n            \"uid\":\"1816533449feda1dfa2d619e\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\x9b\\xbd\\xe9\\x99\\x85\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.915763,\\n                \"lng\":116.434797\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xb8\\x82\\xe4\\xb8\\x9c\\xe5\\x9f\\x8e\\xe5\\x8c\\xba\\xe5\\xbb\\xba\\xe5\\x9b\\xbd\\xe9\\x97\\xa8\\xe5\\x86\\x85\\xe5\\xa4\\xa7\\xe8\\xa1\\x979\\xe5\\x8f\\xb7\",\\n            \"street_id\":\"55fa2c0b7206ea341ce99935\",\\n            \"telephone\":\"010-65126688\",\\n            \"uid\":\"55fa2c0b7206ea341ce99935\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\x98\\x86\\xe4\\xbb\\x91\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.954082,\\n                \"lng\":116.466529\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xb8\\x82\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe6\\x96\\xb0\\xe6\\xba\\x90\\xe5\\x8d\\x97\\xe8\\xb7\\xaf2\\xe5\\x8f\\xb7(\\xe4\\xb8\\x9c\\xe4\\xb8\\x89\\xe7\\x8e\\xaf\\xe5\\x8c\\x97\\xe8\\xb7\\xaf\\xe4\\xb8\\x8e\\xe6\\x96\\xb0\\xe6\\xba\\x90\\xe5\\x8d\\x97\\xe8\\xb7\\xaf\\xe4\\xba\\xa4\\xe6\\xb1\\x87\\xe5\\xa4\\x84\\xe8\\xa5\\xbf\\xe5\\x8d\\x97\\xe8\\xa7\\x92)\",\\n            \"street_id\":\"669775d035aa1b42fd0eb008\",\\n            \"telephone\":\"010-65903388\",\\n            \"uid\":\"669775d035aa1b42fd0eb008\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe4\\xb8\\xad\\xe5\\x9b\\xbd\\xe5\\xa4\\xa7\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.91561,\\n                \"lng\":116.465846\\n            },\\n            \"address\":\"\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe5\\xbb\\xba\\xe5\\x9b\\xbd\\xe9\\x97\\xa8\\xe5\\xa4\\x96\\xe5\\xa4\\xa7\\xe8\\xa1\\x97\\xe4\\xb8\\x80\\xe5\\x8f\\xb7(\\xe5\\x9b\\xbd\\xe8\\xb4\\xb8\\xe4\\xb8\\xad\\xe5\\xbf\\x83)\",\\n            \"street_id\":\"4ea3f2f1b0472bb3aecb663f\",\\n            \"telephone\":\"(010)65052266\",\\n            \"uid\":\"4ea3f2f1b0472bb3aecb663f\"\\n        },\\n        {\\n            \"name\":\"\\xe8\\xa5\\xbf\\xe8\\x8b\\x91\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.942936,\\n                \"lng\":116.33884\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xb8\\x82\\xe6\\xb5\\xb7\\xe6\\xb7\\x80\\xe5\\x8c\\xba\\xe4\\xb8\\x89\\xe9\\x87\\x8c\\xe6\\xb2\\xb3\\xe8\\xb7\\xaf1\\xe5\\x8f\\xb7(\\xe8\\xbf\\x91\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe9\\xa6\\x96\\xe9\\x83\\xbd\\xe4\\xbd\\x93\\xe8\\x82\\xb2\\xe9\\xa6\\x86\\xe5\\x92\\x8c\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\x8a\\xa8\\xe7\\x89\\xa9\\xe5\\x9b\\xad)\",\\n            \"street_id\":\"eb3675036510d10201ec0197\",\\n            \"telephone\":\"010-68313388,010-68314577\",\\n            \"uid\":\"eb3675036510d10201ec0197\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\xb8\\x94\\xe9\\x98\\xb3\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.951987,\\n                \"lng\":116.454826\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe6\\x96\\xb0\\xe6\\xba\\x90\\xe8\\xa5\\xbf\\xe9\\x87\\x8c\\xe4\\xb8\\xad\\xe8\\xa1\\x9718\\xe5\\x8f\\xb7\\xef\\xbc\\x88\\xe6\\x96\\xb0\\xe6\\xba\\x90\\xe8\\xa5\\xbf\\xe9\\x87\\x8c\\xe4\\xb8\\xad\\xe8\\xa1\\x97\\xe4\\xb8\\x8e\\xe5\\x8c\\x97\\xe4\\xba\\x8c\\xe9\\x87\\x8c\\xe5\\xba\\x84\\xe8\\xb7\\xaf\\xe4\\xba\\xa4\\xe6\\xb1\\x87\\xe5\\xa4\\x84\\xef\\xbc\\x89\",\\n            \"street_id\":\"c879fa01948d5253c909f002\",\\n            \"telephone\":\"(010)64669988\",\\n            \"uid\":\"c879fa01948d5253c909f002\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe4\\xb8\\x87\\xe8\\xbe\\xbe\\xe7\\xb4\\xa2\\xe8\\x8f\\xb2\\xe7\\x89\\xb9\\xe5\\xa4\\xa7\\xe9\\xa5\\xad\\xe5\\xba\\x97(\\xe4\\xb8\\x87\\xe8\\xbe\\xbe\\xe5\\xba\\x97)\",\\n            \"location\":{\\n                \"lat\":39.914884,\\n                \"lng\":116.476814\\n            },\\n            \"address\":\"\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe5\\xbb\\xba\\xe5\\x9b\\xbd\\xe8\\xb7\\xaf93\\xe5\\x8f\\xb7\\xe4\\xb8\\x87\\xe8\\xbe\\xbe\\xe7\\xb4\\xa2\\xe8\\x8f\\xb2\\xe7\\x89\\xb9\\xe5\\xa4\\xa7\\xe9\\x85\\x92\\xe5\\xba\\x9726\\xe6\\xa5\\xbc\",\\n            \"street_id\":\"4ea3f2f1b04d2bb3aecb6601\",\\n            \"telephone\":\"(010)85996666\",\\n            \"uid\":\"4ea3f2f1b04d2bb3aecb6601\"\\n        },\\n        {\\n            \"name\":\"VIVA\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe5\\xaf\\x8c\\xe5\\x8a\\x9b\\xe5\\xb9\\xbf\\xe5\\x9c\\xba\",\\n            \"location\":{\\n                \"lat\":39.900916,\\n                \"lng\":116.467571\\n            },\\n            \"address\":\"\\xe6\\x9c\\x9d\\xe9\\x98\\xb3\\xe5\\x8c\\xba\\xe5\\x8f\\x8c\\xe4\\xba\\x95\\xe6\\xa1\\xa5\\xe8\\xa5\\xbf\\xe5\\x8c\\x97\\xe4\\xbe\\xa7\\xef\\xbc\\x88\\xe5\\x9b\\xbd\\xe8\\xb4\\xb8\\xe6\\xa1\\xa5\\xe5\\x90\\x91\\xe5\\x8d\\x97\\xe7\\xba\\xa6700\\xe7\\xb1\\xb3\\xef\\xbc\\x89\",\\n            \"street_id\":\"680fb7037c2577858ab988ae\",\\n            \"telephone\":\"010-59037478\",\\n            \"uid\":\"680fb7037c2577858ab988ae\"\\n        },\\n        {\\n            \"name\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe6\\x96\\xb0\\xe5\\x8c\\x97\\xe7\\xba\\xac\\xe9\\xa5\\xad\\xe5\\xba\\x97\",\\n            \"location\":{\\n                \"lat\":39.89044,\\n                \"lng\":116.395972\\n            },\\n            \"address\":\"\\xe5\\x8c\\x97\\xe4\\xba\\xac\\xe8\\xa5\\xbf\\xe5\\x9f\\x8e\\xe5\\x8c\\xba(\\xe5\\x8e\\x9f\\xe5\\xae\\xa3\\xe6\\xad\\xa6\\xe5\\x8c\\xba)\\xe8\\xa5\\xbf\\xe7\\xbb\\x8f\\xe8\\xb7\\xaf11\\xe5\\x8f\\xb7\",\\n            \"street_id\":\"d305db1f93170c27932ca335\",\\n            \"telephone\":\"(010)63012266\",\\n            \"uid\":\"d305db1f93170c27932ca335\"\\n        }\\n    ]\\n}\'\n\n---------------------------------------------\n\n';</script>
+</td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

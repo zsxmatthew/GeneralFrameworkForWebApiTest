@@ -1,0 +1,5 @@
+<testplan date="$createdate" title="$testsettitle">	<testcase feature="$feature" featuregroup="$group" title="$casetitle">		<api header_part1="" header_part2="" http_proxy="" https_proxy="" method="GET" param_part1="" param_part2="" url="http://api.map.baidu.com/place/v2/search?&amp;q=饭店&amp;region=北京&amp;output=json&amp;ak=y5Ru3oCGCxrWu5O2UIdK1ZmS" />		<result><result1 expect="message:ok" type="value" /><result2
+				expect="" type="value">
+</result2></result></testcase>	<testcase>		<api method="get" param_ak="y5Ru3oCGCxrWu5O2UIdK1ZmS" param_output="json" param_q="饭店" param_region="北京" url="http://api.map.baidu.com/place/v2/search">		</api>		<result>
+			<result1 expect="message:ok" type="value"></result1>
+			<result2 expect="results:location:lat:39.950217" type="value"></result2></result></testcase></testplan>
