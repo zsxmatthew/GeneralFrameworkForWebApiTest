@@ -6,7 +6,6 @@ Created on 2014��10��30��
 
 @author: Administrator
 '''
-from doctest import REPORT_CDIFF
 
 def _findJsonPath(jresp, path):
     '''
